@@ -1,0 +1,39 @@
+/*
+ * resource_dll.rc — version info for the stageless DLL
+ *
+ * Same cover identity as resource.rc but with VFT_DLL file type
+ * and OriginalFilename set to .dll extension.
+ */
+
+#include <windows.h>
+
+1 RT_MANIFEST "manifest.xml"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    2,1,4,0
+ PRODUCTVERSION 2,1,4,0
+ FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+ FILEFLAGS      0x0L
+ FILEOS         VOS_NT_WINDOWS32
+ FILETYPE       VFT_DLL
+ FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Contoso Systems Ltd."
+            VALUE "FileDescription",  "Contoso Diagnostics Module"
+            VALUE "FileVersion",      "2.1.4.0"
+            VALUE "InternalName",     "csvchelper"
+            VALUE "LegalCopyright",   "Copyright 2024 Contoso Systems Ltd."
+            VALUE "OriginalFilename", "csvchelper.dll"
+            VALUE "ProductName",      "Contoso Management Suite"
+            VALUE "ProductVersion",   "2.1.4.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

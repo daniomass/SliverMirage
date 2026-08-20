@@ -1,0 +1,11 @@
+build/
+*.o
+*.dat
+*.bin
+*.exe
+*.dll
+payload_key.h
+payload_stageless.h
+*.bak
+loader/bin/
+external/
