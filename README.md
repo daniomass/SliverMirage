@@ -157,6 +157,10 @@ SliverMirage/
 - **Entropy control**: stageless payloads use XOR rolling key to reduce entropy from ~7.8 to ~6.0-6.5
 - Customize `resource.rc` / `resource_dll.rc` with your cover identity before building
 
+## Disclaimer
+
+This project is intended for **authorized security testing, research, and educational purposes only**. Use it exclusively in environments where you have explicit written permission to conduct penetration testing. Unauthorized access to computer systems is illegal. The authors assume no liability for misuse of this software.
+
 ## Credits
 
 - [Crystal Palace](https://tradecraftgarden.org/) by Rasta Mouse — PICO virtualization engine
